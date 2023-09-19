@@ -3,13 +3,98 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'IBM Plex Sans Arabic';
     /* overflow-y: hidden; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .left_side {
+        display: none;
+    }
+}
+
+.back_cont button {
+    color: rgba(0, 0, 0, 0.597);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffff;
+    border: none;
+
+}
+.right_side {
+    margin: auto;
+}
+.right_side h1 {
+    color: #1E1E1E;
+    font-weight: bold;
 }
 
 .form_cont {
     display: flex;
+    flex-direction: row-reverse;
 }
 
+.form-label {
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: large;
+    margin-right: 3%;
+}
+
+.form-select {
+    background-color: #F4F5FB;
+}
+
+option {
+    background-color: #F4F5FB;
+    color: #787878;
+}
+
+.form-control {
+    background-color: #F4F5FB;
+    border: 1px solid #CCCCCC;
+    height: 40px;
+}
+
+.form-control::placeholder {
+    color: #787878;
+}
+
+#password_input {
+    background-image: url("/img/lock.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 18px;
+    padding-right: 50px;
+    background-position-x:right 20px;
+}
+
+#company_name {
+    background-image: url("/img/building.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 18px;
+    padding-right: 50px;
+    background-position-x:right 20px;
+}
+#email_input {
+    background-image: url("/img/envelope.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 18px;
+    padding-right: 50px;
+    background-position-x:right 20px;
+}
+
+#form_btn {
+    border-radius: 8spx;
+    background-color: #5AC99D;
+    border:1px solid  #5AC99D;
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    padding: 2.5% 0;
+}
 
 .left_side {
     z-index: 9;
@@ -21,6 +106,8 @@ body {
     /* align-items: center; */
     /* justify-: center; */
     margin-right: auto;
+    transition: .25s ease;
+
 }
 .left_side img{
     margin:auto;
@@ -30,4 +117,8 @@ body {
 
 .right_side {
     margin-left:auto;
+}
+
+input {
+    background-color: #F4F5FB;
 }
