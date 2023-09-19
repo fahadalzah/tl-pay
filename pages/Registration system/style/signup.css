@@ -1,1 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    /* overflow-y: hidden; */
+}
+
+.form_cont {
+    display: flex;
+}
+
+
+.left_side {
+    z-index: 9;
+    background-color: #5AC99D;
+    /* display: flex; */
+    min-height: 750px;
+    width: 45%;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-: center; */
+    margin-right: auto;
+}
+.left_side img{
+    margin:auto;
+    /* width: 500px; */
+    /* height: 500px; */
+}
+
+.right_side {
+    margin-left:auto;
+}
