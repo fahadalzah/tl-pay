@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/pages/Registration system/style/signup-2.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <title>بوابة التسجيل | تِل</title>
+</head>
+<body dir="rtl">
+    <div class="form_cont">
+        <div class="left_side" >
+            <img class="img-fluid" src="/img/شعار_تل_فاتح_من_دون_خلفية.png" alt="">
+        </div>
+        <form class="right_side">
+            <h1>المعلومات الشخصية</h1>
+            <p style="color: #4E585F; font-size: 18px; font-weight: 500;">اهلا بك الرجاء تعبئة المعلومات بشكل صحيح !</p>
+            <label class="mb-3">المعلومات الشخصية <span style="color: #F32C2C;">*</span></label>
+            <div class="mb-3">
+                <label for="full_name" class="form-label mb-2">إسمك الكامل</label>
+                <input type="text" class="form-control" placeholder="إسمك الكامل" id="full_name" aria-describedby="إسمك الكامل"  pattern="[A-Za-zأ-ي]*" title="يجب ان يكون المدخل أحرف" required>
+            </div>
+            <div class="mb-3">
+                <label for="nat_id" class="form-label mb-2">الهوية الوطنية</label>
+                <input type="text" class="form-control" placeholder="الهوية الوطنية" id="nat_id" aria-describedby="الهوية الوطنية" maxlength="10" minlength="10" pattern="[0-9]*" title="يجب أن يحتوي هذا الحقل على أرقام فقط" required>
+            </div>
+            <label class="mb-3" for="phonenumber" style="color: #3A3A3A; font-weight: 500; font-size: large; margin-right: 3%;">رقم الهاتف</label>
+            <div dir="ltr" id="phonenumber" class="input-group mb-3">
+                <select id="sr" class="form-select" aria-label="أختيار مفتاح دولتك" style="max-width: 20%; text-align: center; background-color: #F4F5FB; border: 1px solid #CCCCCC; ">
+                    <option selected value="966">🇸🇦</option>
+                    <option value="971">🇦🇪</option>
+                    <option value="974">🇶🇦</option>
+                    <option value="965">🇰🇼</option>
+                    <option value="968">🇴🇲</option>
+                    <option value="973">🇧🇭</option>
+
+                </select>
+                <input dir="rtl" type="text" id="phone_number" class="form-control" placeholder="رقم الهاتف" aria-label="رقم الهاتف" maxlength="10" minlength="9" pattern="[0-9]*" title="يجب أن يحتوي هذا الحقل على أرقام فقط" required>
+              </div>
+              
+            <p style="font-size: 16px; color: #787878; font-weight: 400; text-align: center;">بالتسجيل أنت توافق على <a href="#" style="color: #5AC99D; text-decoration: none;">الشروط والأحكام / الخصوصية</a></p>
+            <button type="submit" id="form_btn" class="btn btn-primary"> إنشاء حساب </button>
+            <p style="color: #4E585F; font-weight: 500; font-size: 20px; text-align: center; margin-top: 5%;">لديك حساب من قبل ؟ <a href="signin.html" style="color: #5AC99D; text-decoration: none;">تسجيل دخول</a></p>
+        </form>
+        <div class="back_cont">
+            <button href="signup.html" style="padding-top: 18%; width: 100%;" onclick="goBack()"> العودة <i class="fi fi-br-angle-left"></i></button>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/signup.js"></script>
+    <script>
+        function goBack() {
+        window.history.back()
+       }
+       
+    </script>
+</body>
+</html>

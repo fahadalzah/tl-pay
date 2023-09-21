@@ -4,13 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/pages/Registration system/style/signup.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <title>بوابة التسجيل | تِل</title>
 </head>
 <body dir="rtl">
-    <div class="left-side">
-        <img class="img-fluid" src="" alt="">
+    <div class="form_cont">
+        <div class="left_side" >
+            <img class="img-fluid" src="/img/شعار_تل_فاتح_من_دون_خلفية.png" alt="">
+        </div>
+        <form class="right_side">
+            <h1>إنشاء حساب جديد</h1>
+            <p style="color: #4E585F; font-size: 20px; font-weight: 400;">أهلا بك في بوابة التسجيل للتجار !</p>
+            <div class="mb-3">
+                <label for="company_name" class="form-label mb-2">إسم الشركة</label>
+                <input type="text" class="form-control" placeholder="إسم الشركة" id="company_name" aria-describedby="إسم الشركة" required>
+            </div>
+            <div class="mb-3">
+                <label for="company_number" class="form-label mb-2">عدد أعضاء الشركة</label>
+                <select class="form-select" style="color: #787878;  background-color: #F4F5FB; border: 1px solid #CCCCCC; height: 48px; border-radius: 9px;" id="company_number" aria-label="عدد أعضاء الشركة">
+                    <option selected style="color: #787878;">2-9 عضو</option>
+                    <option value="1">10-20 عضو</option>
+                    <option value="2">21-40 عضو</option>
+                    <option value="3">41- فما فوق , عضو</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="email_input" class="form-label mb-2">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email_input" placeholder="البريد الإلكتروني" aria-describedby="البريد الإلكتروني" required>
+                
+            </div>
+            <div class="mb-3">
+                <label for="password_input" class="form-label mb-2">كلمة المرور</label>
+                <input type="password" placeholder="كلمة المرور" class="form-control" id="password_input" aria-describedby="كلمة المرور" required>
+                
+                <p class="mt-3" style="font-size: 16px; color: #787878; font-weight: 400;">يجب أن تحتوي كلمة المرور على 8 حروف وأرقام ورموز مثل *@$</p>
+            </div>
+            <p style="font-size: 16px; color: #787878; font-weight: 400; text-align: center;">بالتسجيل أنت توافق على <span style="color: #5AC99D;">الشروط والأحكام / الخصوصية</span></p>
+          <button type="submit" id="form_btn" class="btn btn-primary">الخطوة التالية</button>
+            <p style="color: #4E585F; font-weight: 500; font-size: 20px; text-align: center; margin-top: 5%;">لديك حساب من قبل ؟ <a href="signin.html" style="color: #5AC99D; text-decoration: none;">تسجيل دخول</a></p>
+        </form>
+        <div class="back_cont">
+            <button style="padding-top: 18%; width: 100%;" onclick="goBack()"> العودة <i class="fi fi-br-angle-left"></i></button>
+        </div>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="/js/signup.js"></script>
+    <script>
+        function goBack() {
+        window.history.back()
+       }
+    </script>
 </body>
 </html>
