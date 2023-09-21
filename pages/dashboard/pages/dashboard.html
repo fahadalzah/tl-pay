@@ -11,37 +11,45 @@
     <title>لوحة التحكم | تل باي</title>
 </head>
 <body dir="rtl">
-    <div id="side_nav" class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; background-color: #5AC99D;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-            <img src="/img/تل صغير.png" alt="شعار تل" width="150" style="margin: auto;">
+    <div id="side_nav" class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; background-color: #5AC99D; border-top-left-radius: 12px; border-bottom-left-radius: 12px; height: 735px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none" style="margin: 0 auto;">
+            <img src="/img/تل صغير.png" alt="شعار تل" width="150" style="margin-bottom: 20%;">
         </a>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link" aria-current="page" style="background-color: #4FAE88; color: whitesmoke; font-size: 20px;">
+            <a href="#" class="nav-link" aria-current="page" style="background-color: #4FAE88; color: whitesmoke; font-size: 20px; display: flex; margin-bottom: 20%;">
               <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg> -->
-              <i style="margin-left: 5px; font-size: 15px;" class="fi fi-rs-house-chimney"></i>
+              <i style="margin-left: 10px; font-size: 20px; display: flex; align-items: center;" class="fi fi-rs-house-chimney"></i>
               الرئيسية
             </a>
           </li>
          
-            <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                  المدفوعات
+            <li class="mb-3">
+                <button id="side_btn" class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" style="font-size: 20px; color: whitesmoke; font-weight: 500; width: 100%;">
+                    <i style="margin-left: 10px; font-size: 20px; display: flex; align-items: center;" class="fi fi-rs-credit-card"></i>
+                    المدفوعات
                 </button>
-                <div class="collapse" id="dashboard-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                <div class="collapse" id="dashboard-collapse" style="margin-top: 5%; font-size: 20px; color: white;">
+                  <ul id="" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">إنشاء دفعة</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
                   </ul>
                 </div>
-              
           <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-              Orders
-            </a>
+            <button id="s" class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse1" aria-expanded="false" style="font-size: 20px; color: whitesmoke; font-weight: 500; width: 100%;">
+                <i style="margin-left: 10px; font-size: 20px; display: flex; align-items: center;" class="fi fi-rs-credit-card"></i>
+                الفواتير
+            </button>
+            <div class="collapse" id="dashboard-collapse1" style="margin-top: 5%; font-size: 20px; color: white;">
+              <ul id="ss" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">إنشاء دفعة</a></li>
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="#" class="nav-link link-dark">

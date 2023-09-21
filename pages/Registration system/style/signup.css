@@ -6,18 +6,35 @@ body {
     /* overflow-y: hidden; */
 }
 
-@media only screen and (max-width: 1000px) {
-    .left_side {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 1355px) {
     .back_cont {
         display: none;
     }
 }
 
+#center_logo {
+    display: none;
+}
+
+
+.top_side {
+    margin-bottom: 1%;
+    padding: 4% 1%;
+    display: none;
+    background-color: #5AC99D;
+}
+@media only screen and (max-width: 1000px) {
+    .left_side {
+        display: none;
+    }
+    #center_logo {
+        display: block;
+        margin: auto;
+    }
+    .top_side {
+        display: block;
+    }
+}
 
 .back_cont button {
     color: rgba(0, 0, 0, 0.597);
@@ -30,6 +47,7 @@ body {
 }
 .right_side {
     margin: auto;
+    margin-top: 7%;
 }
 .right_side h1 {
     color: #1E1E1E;
@@ -116,6 +134,7 @@ option {
 }
 
 .left_side {
+    position: sticky;
     z-index: 9;
     background-color: #5AC99D;
     /* display: flex; */

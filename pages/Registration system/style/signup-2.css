@@ -7,9 +7,33 @@ body {
     /* overflow-y: hidden; */
 }
 
+@media only screen and (max-width: 1355px) {
+    .back_cont {
+        display: none;
+    }
+}
+
+#center_logo {
+    display: none;
+}
+
+
+.top_side {
+    margin-bottom: 15%;
+    padding: 4% 1%;
+    display: none;
+    background-color: #5AC99D;
+}
 @media only screen and (max-width: 1000px) {
     .left_side {
         display: none;
+    }
+    #center_logo {
+        display: block;
+        margin: auto;
+    }
+    .top_side {
+        display: block;
     }
 }
 

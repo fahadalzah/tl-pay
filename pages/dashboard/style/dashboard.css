@@ -10,3 +10,13 @@ body {
 #side_nav {
     font-weight: 500;
 }
+
+#side_nav li {
+    width: 100%;
+    color: white;
+}
+
+#side_btn:hover {
+    background-color: #4FAE88;
+    width: 100%;
+}
