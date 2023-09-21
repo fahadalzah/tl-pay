@@ -23,15 +23,23 @@
             <label class="mb-3">المعلومات الشخصية <span style="color: #F32C2C; user-select: none;">*</span></label>
             <div class="mb-3">
                 <label for="full_name" class="form-label mb-2">إسمك الكامل</label>
+                <!-- error label -->
+                <label id="full_name_error" class="mb-3" for="full_name" style="color: #F32C2C; font-weight: 400; font-size: 16px; margin-right: 3%; padding-right: 3%; border-right: 2px solid #CCCCCC; user-select: none;  display: none;"> يجب ان يكون المدخل أحرف ! </label>
+                <label id="full_name_error_empty" class="mb-3" for="full_name" style="color: #F32C2C; font-weight: 400; font-size: large; margin-right: 3%; padding-right: 3%; border-right: 2px solid #CCCCCC; user-select: none;"> يجب تعبئة المدخل ! </label>
+
+
                 <input type="text" class="form-control" placeholder="إسمك الكامل" id="full_name" aria-describedby="إسمك الكامل"  pattern="[A-Za-zأ-ي]*" title="يجب ان يكون المدخل أحرف" required>
             </div>
             <div class="mb-3">
                 <label for="nat_id" class="form-label mb-2">الهوية الوطنية</label>
+                <label id="nat_id_error" class="mb-3" for="nat_id" style="color: #F32C2C; font-weight: 400; font-size: 16px; margin-right: 3%; padding-right: 3%; border-right: 2px solid #CCCCCC; user-select: none;">تأكد من كتابة الهوية بشكل صحيح !</label>
                 <input type="text" class="form-control" placeholder="الهوية الوطنية" id="nat_id" aria-describedby="الهوية الوطنية" maxlength="10" minlength="10" pattern="[0-9]*" title="يجب أن يحتوي هذا الحقل على أرقام فقط" required>
             </div>
             <label class="mb-3" for="phonenumber" style="color: #3A3A3A; font-weight: 500; font-size: large; margin-right: 3%;">رقم الهاتف</label>
+            <label id="phone_error" class="mb-3" for="phonenumber" style="color: #F32C2C; font-weight: 400; font-size: large; margin-right: 3%; padding-right: 3%; border-right: 2px solid #CCCCCC; user-select: none;">الرقم غير صحيح !</label>
+
             <div dir="ltr" id="phonenumber" class="input-group mb-3">
-                <select id="sr" class="form-select" aria-label="أختيار مفتاح دولتك" style="max-width: 20%; text-align: center; background-color: #F4F5FB; border: 1px solid #CCCCCC; ">
+                <select id="sr" class="form-select" aria-label="أختيار مفتاح دولتك" style="max-width: 20%; text-align: center; background-color: #F4F5FB; border: 1px solid #CCCCCC; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">
                     <option selected value="966">🇸🇦</option>
                     <option value="971">🇦🇪</option>
                     <option value="974">🇶🇦</option>
