@@ -3,6 +3,12 @@
     padding: 0;
     font-family: IBM Plex Sans Arabic;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .card{
     margin: 0;
     width: 300px;
@@ -50,7 +56,35 @@ p b{
     border: none;
     border-radius: 10px;
 }
-
+.btn-group button{
+    color: #fff;
+    margin: 10px;
+    border: none;
+    font-size: larger;
+}
+.btn-group button:hover{
+    background-color: #5AC99D;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+.btn-group button:focus{
+    background-color: #5AC99D;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+.btn-group button:active{
+    background-color: #5AC99D;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+.btn-group{
+    background-color: #3d9270;
+    width: fit-content;
+    margin: 50px;
+}
 .card a:hover{
     background-color: #3d9270;
     color: whitesmoke;
@@ -68,10 +102,15 @@ p b{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4%;
+    gap: 10px;
     justify-content: center;
     margin-top:50px;
     padding: 0 50px;
     transition: .25s ease-in-out;
 }
- 
+/* #month1:active{
+    background-color: #5AC99D;
+    color: white;
+    border: none;
+    margin: 10px;
+} */
