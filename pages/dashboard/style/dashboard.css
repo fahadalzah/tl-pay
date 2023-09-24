@@ -20,3 +20,11 @@ body {
     background-color: #4FAE88;
     width: 100%;
 }
+
+.angle_down {
+    background-image: url("/img/angle-small-down-white.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    padding-left: 50px;
+    background-position: center left 15px;
+}
