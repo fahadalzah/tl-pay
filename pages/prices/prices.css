@@ -283,7 +283,14 @@ body {
     border: none;
     margin: 10px;
 } */
-
+.badge{
+    color: #5AC99D;
+    background-color: white;
+}
+.badge:hover{
+    background-color: #5AC99D;
+    color: #fff;
+}
 @media only screen and (max-width: 480px) {
     .lead {
         font-weight: 500;
@@ -294,7 +301,6 @@ body {
         height: 60px;
     }
 }
-
 
 
 /*  */
@@ -340,8 +346,9 @@ body {
 #pro #h5_card span {
     color: #787878;
 }
-
-
+#pro .btn:hover{
+    background-color: whitesmoke;
+}
 @media only screen and (min-width: 1080px) {
 
 #pro {
@@ -377,4 +384,30 @@ body {
     color: white;
 }
 
+}
+@media only screen and (min-width: 700px) {
+    table{
+        margin-top: 100px;
+        margin: auto;
+        border: solid 1px;
+        width: 650px;
+    }
+    .table{
+        width: 650px;
+    }
+}
+td{
+    text-align: center;
+}
+table{
+    margin-top: 100px;
+    margin: auto;
+    border: solid 1px;
+}
+th{
+    text-align: right;
+}
+td img{
+    width: 20px;
+    height: 20px;
 }
