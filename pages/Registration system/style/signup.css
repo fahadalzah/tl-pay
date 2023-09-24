@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap');
+
 body {
     padding: 0;
     margin: 0;
@@ -23,14 +24,17 @@ body {
     display: none;
     background-color: #5AC99D;
 }
+
 @media only screen and (max-width: 1000px) {
     .left_side {
         display: none;
     }
+
     #center_logo {
         display: block;
         margin: auto;
     }
+
     .top_side {
         display: block;
     }
@@ -45,10 +49,12 @@ body {
     margin-right: 50%;
 
 }
+
 .right_side {
     margin: auto;
     margin-top: 7%;
 }
+
 .right_side h1 {
     color: #1E1E1E;
     font-weight: bold;
@@ -73,6 +79,7 @@ body {
 option {
     background-color: #F4F5FB;
     color: #787878;
+    font-size: large;
 }
 
 .form-control {
@@ -85,48 +92,46 @@ option {
 
 .form-control::placeholder {
     color: #787878;
+    font-size: large;
 }
 
 #password_input {
     background-image: url("/img/lock.png");
     background-repeat: no-repeat;
-    background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
 
 #company_name {
     background-image: url("/img/building.png");
     background-repeat: no-repeat;
-    background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
+
 #email_input {
     background-image: url("/img/envelope.png");
     background-repeat: no-repeat;
-    background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
 
 
 #company_number {
     background-image: url("/img/angle-down.png");
     background-repeat: no-repeat;
-    background-position: center left;
     background-size: 20px;
     padding-left: 50px;
-    background-position-x:left 20px;
+    background-position: center left 15px;
 }
 
 #form_btn {
     border-radius: 8px;
     background-color: #5AC99D;
-    border:1px solid  #5AC99D;
+    border: 1px solid #5AC99D;
     width: 100%;
     font-weight: 500;
     font-size: 18px;
@@ -147,14 +152,15 @@ option {
     transition: .25s ease;
 
 }
-.left_side img{
-    margin:auto;
+
+.left_side img {
+    margin: auto;
     /* width: 500px; */
     /* height: 500px; */
 }
 
 .right_side {
-    margin-left:auto;
+    margin-left: auto;
 }
 
 input {
@@ -180,12 +186,12 @@ input {
     height: 20px;
     border-radius: 50%;
     margin-left: 9px;
-    
+
 }
 
 .circle_success {
     /* border: 2px solid #4FAE88; */
-    background-color:#4FAE88;
+    background-color: #4FAE88;
     padding: 2px;
     width: 20px;
     height: 20px;

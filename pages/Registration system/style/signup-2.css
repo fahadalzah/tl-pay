@@ -87,34 +87,32 @@ option {
 
 .form-control::placeholder {
     color: #787878;
+    font-size: large;
 }
 
 
 #full_name {
     background-image: url("/img/user.png");
     background-repeat: no-repeat;
-    background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
 
 #nat_id {
     background-image: url("/img/id-badge.png");
     background-repeat: no-repeat;
-    background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
 
 #phone_number {
     background-image: url("/img/phone-flip.png");
     background-repeat: no-repeat;
-    background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
 
 
