@@ -1,0 +1,66 @@
+#price {
+    background-image: url("/img/usd-circle.png");
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center right 13px;
+    padding-right: 50px;
+}
+
+#client_name {
+    background-image: url("/img/user.png");
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center right 13px;
+    padding-right: 50px;
+}
+
+#client_phone {
+    background-image: url("/img/phone-flip.png");
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center right 13px;
+    padding-right: 50px;
+}
+
+label {
+    display: block;
+    color: #3a3a3a;
+    font-size: 18px;
+}
+
+input {
+    width: 200px;
+    height: 45px;
+}
+
+.info_payment {
+    width: 380px;
+    height: max-content;
+    padding: 5%;
+    border-radius: 8px;
+    margin:3% auto;
+    margin-bottom: 1%;
+    box-shadow: #1c273124 0px 8px 24px;
+}
+
+.info_payment  button {
+    margin: auto;
+    width: 100%;
+    background-color: #5AC99D;
+    color: white;
+    padding: 3% 0;
+    font-size: large;
+    transition: .25s ease-in-out;
+}
+
+.info_payment  button:hover {
+    background-color: #45a37d;
+    color: whitesmoke;
+}
+
+.info_payment  button:active:hover {
+    transform: scale(1.1);
+    background-color: #45a37d;
+    color: whitesmoke;
+    border: none;
+}

@@ -118,7 +118,7 @@ input:focus {
     margin-bottom: 4%;
     display: flex;
     justify-content: center;
-    padding: 3% 40%;
+    padding: 3% 44%;
     background-color: #5ac99d;
     color: white;
     font-size: larger;
@@ -131,7 +131,7 @@ input:focus {
     display: none;
     margin: 3% auto;
     margin-bottom: 4%;
-    padding: 9% 75.8%;
+    padding: 8.7% 85%;
     background-color: black;
     color: white;
     border: none;

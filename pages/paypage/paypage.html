@@ -33,23 +33,23 @@
                     <div class="payment_form">
                         <div class="card_info">
                             <label class="fw-semibold mb-2" for="card_name">الإسم الموجود على البطاقة</label>
-                            <input type="text" class="form-control" id="card_name" minlength="8" maxlength="59" placeholder="الإسم الموجود على البطاقة">
+                            <input type="text" class="form-control" id="card_name" minlength="8" maxlength="59" placeholder="الإسم الموجود على البطاقة" required>
                         </div>
                         <div class="card_info">
                             <label class="fw-semibold mb-2" for="card_name">رقم البطاقة</label>
                             <div dir="ltr" class="input-group mb-3" style="width: 300px;">
                                 <span class="input-group-text" id="basic-addon1" style="height: 45px; background-color: white;"><img src="/img/visa_logo 1.png" alt="" width="30px"></span>
-                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"  id="card_number" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000">
+                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"  id="card_number" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000" required>
                               </div>
                     
                               <div class="payment_grp d-flex" style="gap: 5%; justify-content: center; align-items: center;">
                                 <div class="item">
                                     <label for="card_cvv" class="mb-2 fw-semibold">الرمز السري :</label>
-                                    <input type="text" class="form-control" id="card_cvv" placeholder="000" data-mask="000" style="width: 140px;">
+                                    <input type="text" class="form-control" id="card_cvv" placeholder="000" data-mask="000" style="width: 140px;" required>
                                 </div>
                                 <div class="item">
                                     <label for="card_exdata"  class="mb-2 fw-semibold">تاريخ الإنتهاء :</label>
-                                    <input dir="auto" type="text" class="form-control" id="card_exdata" placeholder="00/00" data-mask="00 / 00" style="width: 140px;">
+                                    <input dir="auto" type="text" class="form-control" id="card_exdata" placeholder="00/00" data-mask="00 / 00" style="width: 140px;" required>
                                 </div>
                               </div>
                               <button class="fw-semibold" id="pay_now" style="margin-top: 8%;">الدفع</button>

@@ -150,27 +150,26 @@
 			</nav>
             <header style="margin: 1.5% 2%; display: flex; align-items: center; text-align: center;">
                 <div id="undo" style="margin-left: 2%; border-left: 2px solid #cccccc; padding-left: 2%;">
-                    <i  style="font-size: xx-large; cursor: pointer; display: flex; align-items: center;"
+                    <i  style="color: #3a3a3a; font-size: xx-large; cursor: pointer; display: flex; align-items: center;"
                     class=
                     "fi fi-bs-cross-small"
                     ></i>
                 </div>
-                <h3>إنشاء دفعة</h3>
+                <h3 style="color: #3a3a3a;">إنشاء دفعة</h3>
                 <button class="btn fw-semibold" style="margin-right: auto; background-color: #5AC99D; color: white; padding: 0.8% 3%; font-size: large;">إرسال الدفعة</button>
             </header>
+            
             <hr>
             <div class="info_payment">
-                <label for="proud" class="mb-2">إسم المنتج</label>
-                <br>
-                <input type="text" id="proud" class="mb-3" placeholder="إسم المنتج" minlength="2" maxlength="30">
-                <br>
-                <label for="proud" class="mb-2">سعر المنتج</label>
-                <br>
-                <input type="text" id="proud" class="mb-3" placeholder="سعر المنتج" data-mask="0000">
-                <br>
-                <label for="proud" class="mb-2">كمية المنتج</label>
-                <br>
-                <input type="text" id="proud" class="mb-3" placeholder="سعر المنتج" data-mask="00">
+                <h2>إنشاء دفعة</h2>
+                <label for="price" class="mb-2">المبلغ المطلوب :</label>
+                <input class="mb-3 form-control" id="price" type="text" placeholder="$00000" data-mask="00000">
+                <h5>بيانات العميل <span style="color: red; user-select: none;">*</span></h5>
+                <label for="client_name" class="mb-3">إسم العميل :</label>
+                <input type="text" id="client_name" class="mb-3 form-control" placeholder="إسم العميل" minlength="4" maxlength="30">
+                <label for="client_phone" class="mb-3">رقم هاتف العميل :</label>
+                <input type="text" id="client_phone" class="mb-3 form-control" placeholder="رقم هاتف العميل" minlength="9" maxlength="10" data-mask="0000000000">
+                <button onclick="createpay()" class="btn mt-3">إنشاء الدفعة</button>
             </div>
 			<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
@@ -200,12 +199,32 @@
 		<p style="text-align: center;">لوحة التحكم حالياً لاتعدم الهواتف المحمولة</p>
 		<button style="background-color: #5AC99D; color: white; border: none; display: flex;">العودة</button>
 	</section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-        
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script> -->
+    <script>
+        const undo = document.getElementById("undo");
+        undo.addEventListener("click", function () {
+            swal({
+  title: "هل انت متأكد ؟",
+  text: "إذا رجعت فيجب ان تبدأ بتعبئة البيانات من البداية",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+        window.history.back()
+  } else {
+    swal("حسنا يمكنك إكمال النموذج !");
+  }
+});
+
+        })
+    </script>
 </body>
 </html>
