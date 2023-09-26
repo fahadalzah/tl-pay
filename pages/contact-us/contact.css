@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@200;300;400;500;600&family=Noto+Kufi+Arabic:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+/* this is the editor for the left side of the page */
+*{
+    font-family: IBM Plex Sans Arabic;
+}
+.left {
+    width: 40%;
+    height: 400px;
+    text-align: start;
+    animation: slide .5s;
+}
+
+@keyframes slide {
+    from {transform: translateY(50%);}
+    to {transform: translateY(0%);}
+}
+
+/* this is the social contact in the left side of the page we made it into a flex box and edited its h1 and p*/
+.social-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+.social-contact p {
+    color: rgb(131, 121, 121);
+    font-size: small;
+}
+.social-contact h1 {
+    font-size: medium;
+}
+.social-contact img{
+    width: 40px;
+    height: 40px;
+}
+
+/* this is the editor for the main content they are the h1 2 p they are the discription of for the page */
+.main-content {
+    padding: 10px;
+    color: #1e1e1e;
+}
+/* this is the editor for all the h1 in the left side */
+.left h1 {
+    font-size: xx-large;
+}
+/* this is the main this contains the left and roght side we made it into a flexbox */
+main {
+    height: 500px;
+    width: 1000px;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 5%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    animation: slide .5s;
+}
+/* this is the editor for all input and textarea in the page we changed its color height width...exc */
+main input , main textarea {
+    margin-top: 1px;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 30px;
+    width: 300px;
+    border: solid 2px #CCCCCC;
+    padding: 5px;
+    font-size: medium;
+}
+/* this is where we edited all textareas and inputs :focus so they turn blue after clicked on */
+main input:focus , main textarea:focus {
+    outline: #5ac99d solid 2px;
+    border: none;
+}
+/* this is the textarea max and min editor */
+textarea {
+    max-width: 300px;
+    max-height: 175px;
+    min-height: 40px;
+    min-width: 270px  ;
+}
+/* this is where we edited the entire body */
+body {
+    background-color: whitesmoke;
+}
+/* and lastly theis is the submit button editor we edited its font border boldness hover...exc */
+.submit-btn {
+    font-weight: 500;
+    transition: .25s ease-in-out;
+    border-radius: 9px;
+    height: 40px;
+    width: 317px;
+    background-color: #5ac99d;
+    border: 1px;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+.right{
+    height: 410px;
+    width: 300px;
+}
+.left{
+    margin-bottom: 25px;
+    height: fit-content;
+    width: 400px;
+}
+.left p{
+    margin-bottom: 0;
+}
+.left h1{
+    margin-top: 3px;
+}
+.right input{
+    margin-bottom: 7px;
+}
+.right p{
+    margin: 3px;
+}
+.submit-btn:hover {
+    background-color: #3d9270;
+} 
+a{
+    text-decoration: #5ac99d;
+    color: #5ac99d;
+}
+@media only screen and (max-width: 1010px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: fit-content;
+        gap: 0%;
+        height: 795px;
+
+    }
+    .left h1 {
+        font-size: 35px;
+        margin-top: 2px;
+    }
+    .left p{
+        padding: 5px;
+    }
+    .left{
+        height: fit-content;
+        width: max-content;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .left .submit-btn{
+        margin: 10px;
+    }
+    .left img{
+        width: 32px;
+        height: 32px;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

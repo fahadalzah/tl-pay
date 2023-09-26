@@ -11,6 +11,7 @@ let month3 = document.getElementById('3month')
 let month12 = document.getElementById('12month')
 let sliderbtn = document.getElementById('path2')
 let checkerbtn = document.getElementById('path1')
+let footer = document.getElementById('footer')
 body.removeChild(slider)
 body.removeChild(month12section)
 body.removeChild(month3section)
@@ -45,6 +46,8 @@ month3.addEventListener('click', function () {
         body.removeChild(table)
         body.appendChild(table)
     }
+    body.removeChild(footer)
+    body.appendChild(footer)
 })
 month12.addEventListener('click', function () {
     if (body.contains(month3section)) {
@@ -73,6 +76,8 @@ month12.addEventListener('click', function () {
         body.removeChild(table)
         body.appendChild(table)
     }
+    body.removeChild(footer)
+    body.appendChild(footer)
 })
 month1.addEventListener('click', function () {
     if (body.contains(month3section)) {
@@ -101,10 +106,15 @@ month1.addEventListener('click', function () {
         body.removeChild(table)
         body.appendChild(table)
     }
+    body.removeChild(footer)
+    body.appendChild(footer)
 })
 sliderbtn.addEventListener('click', function () {
     body.removeChild(table)
+    body.removeChild
     body.appendChild(slider)
+    body.removeChild(footer)
+    body.appendChild(footer)
     document.getElementById('path2').style.color = "#5ac99d"
     document.getElementById("path2").style.backgroundColor = "whitesmoke";
     document.getElementById('path1').style.color = "whitesmoke"
@@ -112,6 +122,8 @@ sliderbtn.addEventListener('click', function () {
 })
 checkerbtn.addEventListener('click', function () {
     body.appendChild(table)
+    body.removeChild(footer)
+    body.appendChild(footer)
     body.removeChild(slider)
     document.getElementById('path1').style.color = "#5ac99d"
     document.getElementById("path1").style.backgroundColor = "whitesmoke";

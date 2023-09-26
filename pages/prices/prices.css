@@ -151,9 +151,6 @@ body {
     color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     border: none;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 
@@ -231,15 +228,6 @@ body {
     background-color: #3d9270;
     color: whitesmoke;
 }
-/* .flex{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center
-    gap: 2%;
-    margin-top: 50px;
-} */
-
 .cards{
     display: flex;
     align-items: center;
@@ -259,13 +247,6 @@ body {
 #pro h5 {
     color: #5AC99D;
 }
-
-/* #month1:active{
-    background-color: #5AC99D;
-    color: white;
-    border: none;
-    margin: 10px;
-} */
 .badge{
     color: #5AC99D;
     background-color: white;
@@ -287,7 +268,7 @@ body {
 
 
 /*  */
-#pro{
+#pro, #pro2{
     height: fit-content;
 }
 #pro i {
@@ -338,7 +319,7 @@ body {
 @media only screen and (min-width: 1080px) {
 
 #pro {
-    background-color: #5AC99D; margin-top: -10%; height: 432px;
+    background-color: #5AC99D; margin-top: -10%; height: fit-content;
 }
 
 #pro i {
@@ -399,7 +380,7 @@ th{
 }
 #table_1 td{
     text-align: center;
-    
+    color: #1e1e1e;
     font-size: large;
     margin-top: 100px;
 }
