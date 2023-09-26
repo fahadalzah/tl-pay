@@ -1,4 +1,5 @@
-let slider = document.getElementById("carouselExampleIndicators")
+let slider = document.getElementById("table_1")
+let btns = document.getElementById('months')
 let btngroup = document.getElementById('btn-group')
 let table = document.getElementById("table")
 let body = document.getElementById('body')
@@ -10,6 +11,7 @@ let month3 = document.getElementById('3month')
 let month12 = document.getElementById('12month')
 let sliderbtn = document.getElementById('path2')
 let checkerbtn = document.getElementById('path1')
+body.removeChild(slider)
 body.removeChild(month12section)
 body.removeChild(month3section)
 document.getElementById("1month").style.backgroundColor = "whitesmoke";
@@ -17,19 +19,13 @@ document.getElementById("1month").style.color = "#5ac99d";
 document.getElementById('path1').style.color = "#5ac99d"
 document.getElementById("path1").style.backgroundColor = "whitesmoke";
 month3.addEventListener('click', function () {
-    if (body.appendChild(month12section)) {
+    if (body.contains(month12section)) {
         body.removeChild(month12section)
-    }else{
-        console.log("month1 deleted");
     }
-    if (body.appendChild(month1section)) {
+    if (body.contains(month1section)) {
         body.removeChild(month1section)
-    }else{
-        console.log("month12 deleted");
     }
-    body.removeChild(btngroup)
-    body.removeChild(table)
-    body.appendChild(month3section)
+
     document.getElementById("3month").style.backgroundColor = "whitesmoke";
     document.getElementById("3month").style.color = "#5ac99d";
     document.getElementById("12month").style.backgroundColor = "#5ac99d";
@@ -38,23 +34,26 @@ month3.addEventListener('click', function () {
     document.getElementById("1month").style.color = "whitesmoke";
     document.getElementById("badge").style.color = "#5ac99d"
     document.getElementById("badge").style.backgroundColor = "whitesmoke";
+    body.removeChild(btngroup)    
+    body.appendChild(month3section)
     body.appendChild(btngroup)
-    body.appendChild(table)
+    if (body.contains(slider)) {
+        body.removeChild(slider)
+        body.appendChild(slider)
+    }
+    if (body.contains(table)) {
+        body.removeChild(table)
+        body.appendChild(table)
+    }
 })
 month12.addEventListener('click', function () {
-    if (body.appendChild(month3section)) {
+    if (body.contains(month3section)) {
         body.removeChild(month3section)
-    }else{
-        console.log("month1 deleted");
     }
-    if (body.appendChild(month1section)) {
+    if (body.contains(month1section)) {
         body.removeChild(month1section)
-    }else{
-        console.log("month3 deleted");
     }
-    body.removeChild(btngroup)
-    body.removeChild(table)
-    body.appendChild(month12section)
+
     document.getElementById("12month").style.backgroundColor = "whitesmoke";
     document.getElementById("12month").style.color = "#5ac99d";
     document.getElementById("badge").style.color = "whitesmoke"
@@ -62,24 +61,27 @@ month12.addEventListener('click', function () {
     document.getElementById("1month").style.backgroundColor = "#5ac99d";
     document.getElementById("1month").style.color = "whitesmoke";
     document.getElementById("3month").style.backgroundColor = "#5ac99d";
-    document.getElementById("3month").style.color = "whitesmoke";
+    document.getElementById("3month").style.color = "whitesmoke";    
+    body.removeChild(btngroup)
+    body.appendChild(month12section)
     body.appendChild(btngroup)
-    body.appendChild(table)
+    if (body.contains(slider)) {
+        body.removeChild(slider)
+        body.appendChild(slider)
+    }
+    if (body.contains(table)) {
+        body.removeChild(table)
+        body.appendChild(table)
+    }
 })
 month1.addEventListener('click', function () {
-    if (body.appendChild(month3section)) {
+    if (body.contains(month3section)) {
         body.removeChild(month3section)
-    }else{
-        console.log("month12 deleted");
     }
-    if (body.appendChild(month12section)) {
+    if (body.contains(month12section)) {
         body.removeChild(month12section)
-    }else{
-        console.log("month3 deleted");
     }
-    body.removeChild(btngroup)
-    body.removeChild(table)
-    body.appendChild(month1section)
+
     document.getElementById("1month").style.backgroundColor = "whitesmoke";
     document.getElementById("1month").style.color = "#5ac99d";
     document.getElementById("12month").style.backgroundColor = "#5ac99d";
@@ -87,11 +89,19 @@ month1.addEventListener('click', function () {
     document.getElementById("badge").style.color = "#5ac99d"
     document.getElementById("badge").style.backgroundColor = "whitesmoke";
     document.getElementById("3month").style.backgroundColor = "#5ac99d";
-    document.getElementById("3month").style.color = "whitesmoke";
+    document.getElementById("3month").style.color = "whitesmoke";    
+    body.removeChild(btngroup)
+    body.appendChild(month1section)
     body.appendChild(btngroup)
-    body.appendChild(table)
+    if (body.contains(slider)) {
+        body.removeChild(slider)
+        body.appendChild(slider)
+    }
+    if (body.contains(table)) {
+        body.removeChild(table)
+        body.appendChild(table)
+    }
 })
-body.removeChild(slider)
 sliderbtn.addEventListener('click', function () {
     body.removeChild(table)
     body.appendChild(slider)
@@ -108,6 +118,24 @@ checkerbtn.addEventListener('click', function () {
     document.getElementById('path2').style.color = "whitesmoke"
     document.getElementById("path2").style.backgroundColor = "#5ac99d";
 })
+
+const icons = document.querySelectorAll('btn');
+
+icons.forEach(icon => {
+  icon.addEventListener('btn', () => {
+    // Remove the hover effect class
+    icon.classList.remove('hover');
+    
+    // Trigger a reflow to force a repaint
+    void icon.offsetWidth;
+
+    // Add the hover effect class back
+    icon.classList.add('hover');
+  });
+});
+
+
+
 
 
 document.addEventListener('scroll', function () {
