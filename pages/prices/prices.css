@@ -151,9 +151,6 @@ body {
     color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     border: none;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 
@@ -209,29 +206,12 @@ body {
     border: none;
     margin: 10px;
 }
-
-.btn-group button:focus {
-    background-color: whitesmoke;
-    color: #5AC99D  ;
-    border: none;
-    margin: 10px;
-}
-
 .btn-group button:focus:hover {
     background-color: whitesmoke;
     color: #5AC99D  ;
     border: none;
     margin: 10px;
 }
-
-.btn-group button:active:hover{
-    background-color: whitesmoke;
-    color: #5AC99D  ;
-    border: none;
-    margin: 10px;
-}
-
-
 .btn_group_cont {
     display: flex;
     justify-content: center;
@@ -248,15 +228,6 @@ body {
     background-color: #3d9270;
     color: whitesmoke;
 }
-/* .flex{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center
-    gap: 2%;
-    margin-top: 50px;
-} */
-
 .cards{
     display: flex;
     align-items: center;
@@ -276,13 +247,6 @@ body {
 #pro h5 {
     color: #5AC99D;
 }
-
-/* #month1:active{
-    background-color: #5AC99D;
-    color: white;
-    border: none;
-    margin: 10px;
-} */
 .badge{
     color: #5AC99D;
     background-color: white;
@@ -304,6 +268,9 @@ body {
 
 
 /*  */
+#pro, #pro2{
+    height: fit-content;
+}
 #pro i {
     color: #ffff;
 }
@@ -352,7 +319,7 @@ body {
 @media only screen and (min-width: 1080px) {
 
 #pro {
-    background-color: #5AC99D; margin-top: -10%; height: 432px;
+    background-color: #5AC99D; margin-top: -10%; height: fit-content;
 }
 
 #pro i {
@@ -385,15 +352,15 @@ body {
 }
 
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
     table{
         margin-top: 100px;
         margin: auto;
         border: solid 1px;
-        width: 650px;
+        width: 700px;
     }
     .table{
-        width: 650px;
+        width: 700px;
     }
 }
 td{
@@ -404,10 +371,19 @@ table{
     margin: auto;
     border: solid 1px;
 }
-th{
-    text-align: right;
-}
 td img{
     width: 20px;
     height: 20px;
+}
+th{
+    text-align: center;
+}
+#table_1 td{
+    text-align: center;
+    color: #1e1e1e;
+    font-size: large;
+    margin-top: 100px;
+}
+#table_1 img{
+    height: 25px;
 }
