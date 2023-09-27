@@ -104,7 +104,7 @@ option {
     background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
 
 #password {
@@ -113,7 +113,7 @@ option {
     background-position: center right;
     background-size: 18px;
     padding-right: 50px;
-    background-position-x:right 15px;
+    background-position: center right 15px;
 }
 
 
@@ -143,7 +143,7 @@ option {
     background-position: center left;
     background-size: 30px;
     /* padding-left : 50px; */
-    background-position-x:left 48px;
+    background-position: center  left 48px;
 }
 
 
