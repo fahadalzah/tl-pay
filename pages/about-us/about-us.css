@@ -1,0 +1,46 @@
+.nav {
+    transition: .25s ease-in-out;
+    background-color: white;
+}
+
+.nav-link {
+    color: #1e1e1e;
+    font-size: 21px;
+    font-weight: 500;
+    transition: .25s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #5ac99d;
+    border-radius: 8px;
+}
+
+ #active:hover {
+    color: white;
+}
+
+
+.navbar-nav {
+    margin-right: 4%;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+}
+
+.nav.scrolled {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#signup {
+    font-size: 23px;
+    font-weight: 500;
+    background-color: #5ac99d;
+    border: 1px solid #5ac99d;
+    margin-right: auto;
+    padding: 5px 4%;
+    margin-left: 3%;
+}
